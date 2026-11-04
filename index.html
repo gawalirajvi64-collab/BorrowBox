@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BorrowBox | Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="brand-panel">
+      <img src="assets/borrowbox-logo.png" alt="BorrowBox Logo" class="main-logo">
+      <h1>Don't buy it.<br><span>Borrow it.</span></h1>
+      <p>Share what you have. Borrow what you need.</p>
+    </div>
+
+    <div class="form-panel">
+      <div class="login-card">
+        <div class="mobile-logo">
+          <img src="assets/borrowbox-logo.png" alt="BorrowBox Logo">
+        </div>
+
+        <p class="small-heading">WELCOME BACK</p>
+        <h2>Login to BorrowBox</h2>
+        <p class="subtext">Access your borrowings, listings and requests.</p>
+
+        <form id="loginForm">
+          <label for="email">College Email</label>
+          <input type="email" id="email" placeholder="you@college.edu" required>
+
+          <label for="password">Password</label>
+          <div class="password-box">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="button" id="togglePassword">Show</button>
+          </div>
+
+          <div class="form-row">
+            <label class="remember">
+              <input type="checkbox">
+              <span>Remember me</span>
+            </label>
+            <a href="#" onclick="alert('Password recovery will be connected with the backend later.')">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="primary-btn">Login</button>
+        </form>
+
+        <div class="divider"><span>OR</span></div>
+
+        <p class="signup-text">New to BorrowBox?</p>
+        <a href="signup.html" class="secondary-btn">Create an Account</a>
+
+        <p id="message" class="message"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

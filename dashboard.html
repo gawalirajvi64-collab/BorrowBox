@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BorrowBox | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="assets/borrowbox-logo.png" alt="BorrowBox">
+    </div>
+    <div class="nav-links">
+      <a href="dashboard.html" class="active">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">My Borrowings</a>
+      <a href="#">My Listings</a>
+    </div>
+    <button class="profile-btn" onclick="logout()">Logout</button>
+  </nav>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <div>
+        <p class="small-heading">BORROWBOX</p>
+        <h1>What do you need today?</h1>
+        <p>Find useful things around your campus without buying them.</p>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search calculators, tripods, equipment...">
+        <button>Search</button>
+      </div>
+    </section>
+
+    <h2>Browse Categories</h2>
+    <section class="categories">
+      <div class="category">📚<span>Academic</span></div>
+      <div class="category">🔧<span>Components</span></div>
+      <div class="category">📷<span>Equipment</span></div>
+      <div class="category">💻<span>Electronics</span></div>
+      <div class="category">🎥<span>Project</span></div>
+      <div class="category">🧪<span>Lab</span></div>
+    </section>
+
+    <div class="section-title">
+      <h2>Popular Items</h2>
+      <a href="#">View all →</a>
+    </div>
+
+    <section class="items">
+      <div class="item-card">
+        <div class="item-image">🧮</div>
+        <h3>Scientific Calculator</h3>
+        <p>Available • 0.4 km away</p>
+        <button>View Item</button>
+      </div>
+      <div class="item-card">
+        <div class="item-image">📷</div>
+        <h3>Tripod Stand</h3>
+        <p>Available • 0.7 km away</p>
+        <button>View Item</button>
+      </div>
+      <div class="item-card">
+        <div class="item-image">🔌</div>
+        <h3>Arduino Kit</h3>
+        <p>Available • 1.1 km away</p>
+        <button>View Item</button>
+      </div>
+      <div class="item-card">
+        <div class="item-image">📽️</div>
+        <h3>Mini Projector</h3>
+        <p>Available • 1.4 km away</p>
+        <button>View Item</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
